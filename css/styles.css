@@ -89,6 +89,7 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: 1px solid #d9d9d9;
     font-size: 1.2em;
     font-weight: 700;
     height: 100%;
@@ -108,7 +109,7 @@ main {
 }
 
 .active, .link-segitiga:hover, .link-jajar-genjang:hover {
-    background-color: #008CBA;
+    background-color: #007399;
     color: white;
     text-decoration: none;
     transition: .3s ease-in-out;
@@ -164,6 +165,12 @@ main {
     text-align: center;
     font-weight: 700;
     font-size: 1.2em;
+}
+
+form {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border-top: 1px solid #d9d9d9;
 }
 
 .header-form {
@@ -313,14 +320,14 @@ main {
     margin-right: 40px;
     border-radius: 10px;
     border: 1px solid #008CBA;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5), -5px -5px 15px rgba(0, 0, 0, .4);
 }
 
 .keliling-segitiga {
     width: 50%;
     border-radius: 10px;
     border: 1px solid #008CBA;;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5), -5px -5px 15px rgba(0, 0, 0, .4);
 }
 
 .keliling-segitiga-img {
@@ -334,14 +341,14 @@ main {
     margin-right: 40px;
     border-radius: 10px;
     border: 1px solid #008CBA;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5), -5px -5px 15px rgba(0, 0, 0, .4);
 }
 
 .keliling-jajar-genjang {
     width: 50%;
     border-radius: 10px;
     border: 1px solid #008CBA;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5), -5px -5px 15px rgba(0, 0, 0, .4);
 }
 
 .luas-jajar-genjang-img {

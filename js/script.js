@@ -1,16 +1,10 @@
-let segitiga = document.getElementById('segitiga');
-let jajarGenjang = document.getElementById('jajar-genjang');
-let segitigaBtn = document.getElementById('segitiga-btn');
-let jajarGenjangBtn = document.getElementById('jajar-genjang-btn');
-
-function segitigaActive(){
-    segitiga.style.zIndex = '2';
+function jajarGenjangActive() {
+    document.getElementById('jajar-genjang').style.zIndex = '2';
+    document.getElementById('segitiga').style.zIndex = '1';
 }
 
-function jajarGenjangActive(){
-    segitiga.style.zIndex = '1';
+function segitigaActive() {
+    document.getElementById('segitiga').style.zIndex = '2';
+    document.getElementById('jajar-genjang').style.zIndex = '1';
+    
 }
-
-
-
-

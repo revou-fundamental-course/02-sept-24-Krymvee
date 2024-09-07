@@ -19,7 +19,7 @@
         <main id="segitiga">
 
             <section class="selection-link">
-                <a href="#" class="link-segitiga capitalize active" id="segitiga-btn" onclick="segitigaActive()">segitiga</a>
+                <a href="#" class="link-segitiga active capitalize">segitiga</a>
                 <a href="#" class="link-jajar-genjang capitalize" id="jajar-genjang-btn" onclick="jajarGenjangActive()">jajar genjang</a>
             </section>
 
@@ -63,13 +63,13 @@
                             </div>
                         </div>
                         <div class="hasil-operasi">
-                            <p id="result">Hasilnya yaitu :</p>
+                            <p id="result-luas-segitiga">Hasilnya yaitu :</p>
                         </div>
                         <div class="hitung">
-                            <button class="hitung-btn capitalize">hitung</button>
+                            <button class="hitung-btn capitalize"  onclick="luasSegitiga()">hitung</button>
                         </div>
                         <div class="reset">
-                            <button class="reset-btn capitalize">reset</button>
+                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
                         </div>
                     </form>
                 </aside>
@@ -104,26 +104,26 @@
                         </header>
                         <div class="input-form">
                             <div class="sisi">
-                                <label for="sisi-input" class="capitalize">sisi 1 :</label>
-                                <input type="number" name="sisi-input" id="sisi-input">
+                                <label for="sisi-input1" class="capitalize">sisi 1 :</label>
+                                <input type="number" name="sisi-input1" id="sisi-input1">
                             </div>
                             <div class="sisi">
-                                <label for="sisi-input" class="capitalize">sisi 2 :</label>
-                                <input type="number" name="sisi-input" id="sisi-input">
+                                <label for="sisi-input2" class="capitalize">sisi 2 :</label>
+                                <input type="number" name="sisi-input2" id="sisi-input2">
                             </div>
                             <div class="sisi">
-                                <label for="sisi-input" class="capitalize">sisi 3 :</label>
-                                <input type="number" name="sisi-input" id="sisi-input">
+                                <label for="sisi-input3" class="capitalize">sisi 3 :</label>
+                                <input type="number" name="sisi-input3" id="sisi-input3">
                             </div>
                         </div>
                         <div class="hasil-operasi">
-                            <p id="result">Hasilnya yaitu :</p>
+                            <p id="result-keliling-segitiga">Hasilnya yaitu :</p>
                         </div>
                         <div class="hitung">
-                            <button class="hitung-btn capitalize">hitung</button>
+                            <button class="hitung-btn capitalize" onclick="kelilingSegitiga()">hitung</button>
                         </div>
                         <div class="reset">
-                            <button class="reset-btn capitalize">reset</button>
+                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
                         </div>
                     </form>
                 </aside>
@@ -134,7 +134,7 @@
 
             <section class="selection-link">
                 <a href="#" class="link-segitiga capitalize" onclick="segitigaActive()">segitiga</a>
-                <a href="#" class="link-jajar-genjang capitalize">jajar genjang</a>
+                <a href="#" class="link-jajar-genjang active capitalize">jajar genjang</a>
             </section>
 
             <section class="wrapper">
@@ -167,12 +167,12 @@
                         </header>
                         <div class="input-form">
                             <div class="alas">
-                                <label for="alas-input" class="capitalize">alas :</label>
-                                <input type="number" name="alas-input" id="alas-input">
+                                <label for="alas-input-jg" class="capitalize">alas :</label>
+                                <input type="number" name="alas-input-jg" id="alas-input-jg">
                             </div>
                             <div class="tinggi">
-                                <label for="tinggi-input" class="capitalize">tinggi :</label>
-                                <input type="number" name="tinggi-input" id="tinggi-input">
+                                <label for="tinggi-input-jg" class="capitalize">tinggi :</label>
+                                <input type="number" name="tinggi-input-jg" id="tinggi-input-jg">
                             </div>
                         </div>
                         <div class="hasil-operasi">
@@ -182,7 +182,7 @@
                             <button class="hitung-btn capitalize">hitung</button>
                         </div>
                         <div class="reset">
-                            <button class="reset-btn capitalize">reset</button>
+                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
                         </div>
                     </form>
                 </aside>
@@ -231,7 +231,7 @@
                             <button class="hitung-btn capitalize">hitung</button>
                         </div>
                         <div class="reset">
-                            <button class="reset-btn capitalize">reset</button>
+                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
                         </div>
                     </form>
                 </aside>
