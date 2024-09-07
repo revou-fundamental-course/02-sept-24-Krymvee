@@ -16,11 +16,11 @@
             <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
         </header>
 
-        <main>
+        <main id="segitiga">
 
             <section class="selection-link">
-                <a href="#" class="link-segitiga capitalize">segitiga</a>
-                <a href="#" class="link-jajar-genjang capitalize">jajar genjang</a>
+                <a href="#" class="link-segitiga capitalize active" id="segitiga-btn" onclick="segitigaActive()">segitiga</a>
+                <a href="#" class="link-jajar-genjang capitalize" id="jajar-genjang-btn" onclick="jajarGenjangActive()">jajar genjang</a>
             </section>
 
             <section class="wrapper">
@@ -129,7 +129,117 @@
                 </aside>
             </section>
         </main>
+
+        <main id="jajar-genjang">
+
+            <section class="selection-link">
+                <a href="#" class="link-segitiga capitalize" onclick="segitigaActive()">segitiga</a>
+                <a href="#" class="link-jajar-genjang capitalize">jajar genjang</a>
+            </section>
+
+            <section class="wrapper">
+                <aside class="luas-jajar-genjang">
+                    <header class="content-header">
+                        <h1 class="header-jajar-genjang capitalize">luas jajar genjang</h1>
+                    </header>
+                    <article>
+                        <div class="luas-jajar-genjang-img">
+                            <img src="https://asset.kompas.com/data/photo/2021/03/01/603d0e8e21660.png"
+                                alt="gambar-jajar genjang">
+                        </div>
+                        <div class="rumus-luas-jajar-genjang">
+                            <div>
+                                <p class="capitalize">rumus luas jajar genjang yaitu :</p>
+                            </div>
+                            <div class="rumus-luas">
+                                <p>L = a x t</p>
+                            </div>
+                            <div>
+                                <p>Di mana :</p>
+                                <p>a = Panjang alas</p>
+                                <p>t = Tinggi</p>
+                            </div>
+                        </div>
+                    </article>
+                    <form>
+                        <header class="header-form">
+                            <h1 class="capitalize">hitung luas jajar genjang</h1>
+                        </header>
+                        <div class="input-form">
+                            <div class="alas">
+                                <label for="alas-input" class="capitalize">alas :</label>
+                                <input type="number" name="alas-input" id="alas-input">
+                            </div>
+                            <div class="tinggi">
+                                <label for="tinggi-input" class="capitalize">tinggi :</label>
+                                <input type="number" name="tinggi-input" id="tinggi-input">
+                            </div>
+                        </div>
+                        <div class="hasil-operasi">
+                            <p id="result">Hasilnya yaitu :</p>
+                        </div>
+                        <div class="hitung">
+                            <button class="hitung-btn capitalize">hitung</button>
+                        </div>
+                        <div class="reset">
+                            <button class="reset-btn capitalize">reset</button>
+                        </div>
+                    </form>
+                </aside>
+
+                <aside class="keliling-jajar-genjang">
+                    <header class="content-header">
+                        <h1 class="header-jajar-genjang capitalize">keliling jajar genjang</h1>
+                    </header>
+                    <article>
+                        <div class="keliling-jajar-genjang-img">
+                            <img src="https://asset.kompas.com/data/photo/2021/03/01/603d0e8e21660.png"
+                                alt="gambar-jajar genjang">
+                        </div>
+                        <div class="rumus-luas-jajar-genjang">
+                            <div>
+                                <p class="capitalize">rumus keliling jajar genjang yaitu :</p>
+                            </div>
+                            <div class="rumus-luas">
+                                <p>K = 2 (p + l)</p>
+                            </div>
+                            <div>
+                                <p>Di mana :</p>
+                                <p>p = Panjang</p>
+                                <p>l = Lebar</p>
+                            </div>
+                        </div>
+                    </article>
+                    <form>
+                        <header class="header-form">
+                            <h1 class="capitalize">hitung keliling jajar genjang</h1>
+                        </header>
+                        <div class="input-form">
+                            <div class="panjang">
+                                <label for="panjang-input" class="capitalize">panjang :</label>
+                                <input type="number" name="panjang-input" id="panjang-input">
+                            </div>
+                            <div class="lebar">
+                                <label for="lebar-input" class="capitalize">lebar :</label>
+                                <input type="number" name="lebar-input" id="lebar-input">
+                            </div>
+                        </div>
+                        <div class="hasil-operasi">
+                            <p id="result">Hasilnya yaitu :</p>
+                        </div>
+                        <div class="hitung">
+                            <button class="hitung-btn capitalize">hitung</button>
+                        </div>
+                        <div class="reset">
+                            <button class="reset-btn capitalize">reset</button>
+                        </div>
+                    </form>
+                </aside>
+            </section>
+        </main>
     </div>
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>

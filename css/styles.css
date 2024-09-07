@@ -16,11 +16,12 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin: auto;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .main-header {
-    background-color: red;
     width: 77%;
     display: flex;
     justify-content: center;
@@ -36,18 +37,43 @@ body {
     font-size: 2em;
 }
 
+.main-header p {
+    text-align: center;
+}
+
 main {
-    background-color: aqua;
     width: 80%;
     display: flex;
     padding-bottom: 25px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 25px;
+}
+
+#segitiga {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 104px;
+    z-index: 2;
+}
+
+#jajar-genjang {
+    background-color: white;
+    position: absolute;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 .selection-link {
-    background-color: orange;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +88,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.2em;
     font-weight: 700;
     height: 100%;
@@ -70,24 +96,21 @@ main {
 }
 
 .link-segitiga {
-    background-color: #008CBA;
-    color: white;
+    background-color: #e6e6e6;
+    color: #008CBA;
     text-decoration: none;
 }
 
-.link-segitiga:hover {
-    background-color: #037196;
-    transition: .3s ease-in-out;
-}
-
 .link-jajar-genjang {
-    background-color: #f2f2f2;
+    background-color: #e6e6e6;
     text-decoration: none;
     color: #008CBA;
 }
 
-.link-jajar-genjang:hover {
-    background-color: #d3d3d3;
+.active, .link-segitiga:hover, .link-jajar-genjang:hover {
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
     transition: .3s ease-in-out;
 }
 
@@ -105,7 +128,12 @@ main {
 
 .luas-segitiga-img {
     width: 100%;
-    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+.luas-jajar-genjang-img {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -115,7 +143,15 @@ main {
 }
 
 .rumus-luas-segitiga {
-    background-color: pink;
+    height: 180px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-bottom: 1px rgba(0,0,0,.8);
+}
+
+.rumus-luas-jajar-genjang {
     height: 180px;
     padding-left: 15px;
     display: flex;
@@ -131,7 +167,6 @@ main {
 }
 
 .header-form {
-    background-color: violet;
     height: 50px;
     display: flex;
     align-items: center;
@@ -140,7 +175,6 @@ main {
 }
 
 .input-form {
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -155,9 +189,9 @@ main {
 }
 
 .input-form input {
-    height: 35px;
+    height: 30px;
     border-radius: 5px;
-    border: 1px rgba(0,0,0,.8);
+    border: 2px solid #cccccc;
     font-size: 1.2em;
     font-weight: 600;
     letter-spacing: 1px;
@@ -196,8 +230,21 @@ main {
     height: 60px;
 }
 
+.panjang {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.lebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+}
+
 .hasil-operasi {
-    background-color: orange;
     width: 100%;
     height: 100px;
     padding: 15px 0 0 15px;
@@ -205,7 +252,6 @@ main {
 }
 
 .hitung {
-    background-color: pink;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -230,7 +276,6 @@ main {
 }
 
 .reset {
-    background-color: yellow;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -267,22 +312,156 @@ main {
     width: 50%;
     margin-right: 40px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #008CBA;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
 }
 
 .keliling-segitiga {
     width: 50%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #008CBA;;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
 }
 
 .keliling-segitiga-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.luas-jajar-genjang {
+    width: 50%;
+    margin-right: 40px;
+    border-radius: 10px;
+    border: 1px solid #008CBA;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
+}
+
+.keliling-jajar-genjang {
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #008CBA;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5), -5px -5px 10px rgba(0, 0, 0, .5);
+}
+
+.luas-jajar-genjang-img {
+    padding: 20px 0 20px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.keliling-jajar-genjang-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.luas-jajar-genjang-img img {
+    width: 400px;
+}
+
+.keliling-jajar-genjang-img img {
+    width: 400px;
+}
+
 .keliling-segitiga-img img {
     width: 225px;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1400px) {
+    .main-header {
+        max-width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .selection-link {
+        width: 100%;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .luas-segitiga {
+        width: 96%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .keliling-segitiga {
+        width: 96%;
+    }
+
+    .luas-jajar-genjang {
+        width: 96%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .keliling-jajar-genjang {
+        width: 96%;
+    }
+
+    #segitiga {
+        top: 104px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main-header {
+        width: 100%;
+    }
+
+    .content-header {
+        font-size: 1.1em;
+        height: 90px;
+    }
+
+    .luas-jajar-genjang-img {
+        padding: 25px 0 25px 0;
+    }
+
+    .keliling-jajar-genjang-img {
+        padding: 25px 0 25px 0;
+    }
+
+    .luas-segitiga-img img {
+        width: 330px;
+    }
+
+    .luas-jajar-genjang-img img {
+        width: 330px;
+    }
+    
+    .keliling-jajar-genjang-img img {
+        width: 330px;
+    }
+
+    .header-form h1 {
+        font-size: 1em;
+    }
+
+    #segitiga {
+        top: 120px;
+    }
+    
+    #jajar-genjang {
+        top: 120px;
+    }
 }
