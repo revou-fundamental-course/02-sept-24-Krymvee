@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
     
-    //reset luas jajar genjnag
+    //reset luas jajar genjang
     document.getElementById('resetLuasJajarGenjang').addEventListener('click', function () {
         document.getElementById('luasJajarGenjang').reset();
         document.getElementById('result-luas-jajar-genjang').style.display = 'none';
