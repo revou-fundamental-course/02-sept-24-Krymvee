@@ -171,6 +171,7 @@ form {
     background-color: #f2f2f2;
     border-radius: 10px;
     border-top: 1px solid #d9d9d9;
+    height: 550px;
 }
 
 .header-form {
@@ -253,15 +254,21 @@ form {
 
 .hasil-operasi {
     width: 100%;
-    height: 100px;
     padding: 15px 0 0 15px;
     box-sizing: border-box;
+    position: absolute;
 }
 
 .hitung {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.button {
+    width: 100%;
+    position: relative;
+    top: 140px;
 }
 
 .hitung button {

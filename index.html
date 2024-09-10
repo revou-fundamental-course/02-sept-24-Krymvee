@@ -49,28 +49,30 @@
                             </div>
                         </div>
                     </article>
-                    <form>
+                    <form id="luasSegitiga">
                         <header class="header-form">
                             <h1 class="capitalize">hitung luas segitiga</h1>
                         </header>
                         <div class="input-form">
                             <div class="alas">
                                 <label for="alas-input" class="capitalize">alas :</label>
-                                <input type="number" name="alas-input" id="alas-input">
+                                <input type="number" name="alas-input" id="alas-input" min="1" required>
                             </div>
                             <div class="tinggi">
                                 <label for="tinggi-input" class="capitalize">tinggi :</label>
-                                <input type="number" name="tinggi-input" id="tinggi-input">
+                                <input type="number" name="tinggi-input" id="tinggi-input" min="1" required>
                             </div>
                         </div>
-                        <div class="hasil-operasi">
-                            <p id="result-luas-segitiga">Hasilnya yaitu :</p>
+                        <div class="hasil-operasi" id="result-luas-segitiga">
+                            <p>L = 1/2 x a x t</p><br><p>L = 1/2 x <span id="value-alas-segitiga"></span> x <span id="value-tinggi-segitiga"></span></p><br><p>L = <span id="value-luas-segitiga"></span></p>
                         </div>
-                        <div class="hitung">
-                            <button class="hitung-btn capitalize" onclick="luasSegitiga()">hitung</button>
-                        </div>
-                        <div class="reset">
-                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
+                        <div class="button">                            
+                            <div class="hitung">
+                                <button type="submit" class="hitung-btn capitalize" id="hitungLuasSegitiga">hitung</button>
+                            </div>
+                            <div class="reset">
+                                <button class="reset-btn capitalize" id="resetLuasSegitiga">reset</button>
+                            </div>
                         </div>
                     </form>
                 </aside>
@@ -99,32 +101,34 @@
                             </div>
                         </div>
                     </article>
-                    <form>
+                    <form id="kelilingSegitiga">
                         <header class="header-form">
                             <h1 class="capitalize">hitung keliling segitiga</h1>
                         </header>
                         <div class="input-form">
                             <div class="sisi">
                                 <label for="sisi-input1" class="capitalize">sisi 1 :</label>
-                                <input type="number" name="sisi-input1" id="sisi-input1">
+                                <input type="number" name="sisi-input1" id="sisi-input1" min="1" required>
                             </div>
                             <div class="sisi">
                                 <label for="sisi-input2" class="capitalize">sisi 2 :</label>
-                                <input type="number" name="sisi-input2" id="sisi-input2">
+                                <input type="number" name="sisi-input2" id="sisi-input2" min="1" required>
                             </div>
                             <div class="sisi">
                                 <label for="sisi-input3" class="capitalize">sisi 3 :</label>
-                                <input type="number" name="sisi-input3" id="sisi-input3">
+                                <input type="number" name="sisi-input3" id="sisi-input3" min="1" required>
                             </div>
                         </div>
-                        <div class="hasil-operasi">
-                            <p id="result-keliling-segitiga">Hasilnya yaitu :</p>
+                        <div class="hasil-operasi" id="result-keliling-segitiga">
+                            <p>K = a + b + c</p><br><p>L = <span id="value-sisi1"></span> + <span id="value-sisi2"></span> + <span id="value-sisi3"></span></p><br><p>K = <span id="value-keliling-segitiga"></span></p>
                         </div>
-                        <div class="hitung">
-                            <button class="hitung-btn capitalize" onclick="kelilingSegitiga()">hitung</button>
-                        </div>
-                        <div class="reset">
-                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
+                        <div class="button">
+                            <div class="hitung">
+                                <button type="submit" class="hitung-btn capitalize" id="hitungKelilingSegitiga">hitung</button>
+                            </div>
+                            <div class="reset">
+                                <button class="reset-btn capitalize" id="resetKelilingSegitiga">reset</button>
+                            </div>
                         </div>
                     </form>
                 </aside>
@@ -146,7 +150,7 @@
                     <article>
                         <div class="luas-jajar-genjang-img">
                             <img src="https://asset.kompas.com/data/photo/2021/03/01/603d0e8e21660.png"
-                                alt="gambar-jajar genjang">
+                                alt="gambar-jajar-genjang">
                         </div>
                         <div class="rumus-luas-jajar-genjang">
                             <div>
@@ -162,7 +166,7 @@
                             </div>
                         </div>
                     </article>
-                    <form>
+                    <form id="luasJajarGenjang">
                         <header class="header-form">
                             <h1 class="capitalize">hitung luas jajar genjang</h1>
                         </header>
@@ -176,14 +180,16 @@
                                 <input type="number" name="tinggi-input-jg" id="tinggi-input-jg">
                             </div>
                         </div>
-                        <div class="hasil-operasi">
-                            <p id="result">Hasilnya yaitu :</p>
+                        <div class="hasil-operasi" id="result-luas-jajar-genjang">
+                            <p>L = a x t</p><br><p>L = <span id="value-alas-jg"></span> x <span id="value-tinggi-jg"></span></p><br><p>L = <span id="value-luas-jajar-genjang"></span></p>
                         </div>
-                        <div class="hitung">
-                            <button class="hitung-btn capitalize">hitung</button>
-                        </div>
-                        <div class="reset">
-                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
+                        <div class="button">
+                            <div class="hitung">
+                                <button type="submit" class="hitung-btn capitalize" id="hasilLuasJajarGenjang">hitung</button>
+                            </div>
+                            <div class="reset">
+                                <button class="reset-btn capitalize" id="resetLuasJajarGenjang">reset</button>
+                            </div>
                         </div>
                     </form>
                 </aside>
@@ -195,7 +201,7 @@
                     <article>
                         <div class="keliling-jajar-genjang-img">
                             <img src="https://asset.kompas.com/data/photo/2021/03/01/603d0e8e21660.png"
-                                alt="gambar-jajar genjang">
+                                alt="gambar-jajar-genjang">
                         </div>
                         <div class="rumus-luas-jajar-genjang">
                             <div>
@@ -211,28 +217,30 @@
                             </div>
                         </div>
                     </article>
-                    <form>
+                    <form id="kelilingJajarGenjang">
                         <header class="header-form">
                             <h1 class="capitalize">hitung keliling jajar genjang</h1>
                         </header>
                         <div class="input-form">
                             <div class="panjang">
                                 <label for="panjang-input" class="capitalize">panjang :</label>
-                                <input type="number" name="panjang-input" id="panjang-input">
+                                <input type="number" name="panjang-input" id="panjang-input-jg" min="1" required>
                             </div>
                             <div class="lebar">
                                 <label for="lebar-input" class="capitalize">lebar :</label>
-                                <input type="number" name="lebar-input" id="lebar-input">
+                                <input type="number" name="lebar-input" id="lebar-input-jg" min="1" required>
                             </div>
                         </div>
-                        <div class="hasil-operasi">
-                            <p id="result">Hasilnya yaitu :</p>
+                        <div class="hasil-operasi" id="result-keliling-jajar-genjang">
+                            <p>K = 2 (p + l)</p><br><p>K = 2 (<span id="value-panjang-jg"></span> + <span id="value-lebar-jg"></span>)</p><br><p>L = <span id="value-keliling-jajar-genjang"></span></p>
                         </div>
-                        <div class="hitung">
-                            <button class="hitung-btn capitalize">hitung</button>
-                        </div>
-                        <div class="reset">
-                            <button class="reset-btn capitalize" onclick="reset()">reset</button>
+                        <div class="button">
+                            <div class="hitung">
+                                <button type="submit" id="hasilKelilingJajarGenjang" class="hitung-btn capitalize">hitung</button>
+                            </div>
+                            <div class="reset">
+                                <button class="reset-btn capitalize" id="resetKelilingJajarGenjang">reset</button>
+                            </div>
                         </div>
                     </form>
                 </aside>
