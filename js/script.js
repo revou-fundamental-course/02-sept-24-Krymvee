@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('luasSegitiga').addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const alasSegitiga = parseFloat(document.getElementById('alas-input').value);
-        const tinggiSegitiga = parseFloat(document.getElementById('tinggi-input').value);
+        let alasSegitiga = parseFloat(document.getElementById('alas-input').value);
+        let tinggiSegitiga = parseFloat(document.getElementById('tinggi-input').value);
 
         // Menghitung luas
-        const luasSegitiga = 0.5 * alasSegitiga * tinggiSegitiga;
+        let luasSegitiga = 0.5 * alasSegitiga * tinggiSegitiga;
 
         document.getElementById('value-alas-segitiga').innerText = alasSegitiga;
         document.getElementById('value-tinggi-segitiga').innerText = tinggiSegitiga;
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('kelilingSegitiga').addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const sisi1Segitiga = parseFloat(document.getElementById('sisi-input1').value);
-        const sisi2Segitiga = parseFloat(document.getElementById('sisi-input2').value);
-        const sisi3Segitiga = parseFloat(document.getElementById('sisi-input3').value);
+        let sisi1Segitiga = parseFloat(document.getElementById('sisi-input1').value);
+        let sisi2Segitiga = parseFloat(document.getElementById('sisi-input2').value);
+        let sisi3Segitiga = parseFloat(document.getElementById('sisi-input3').value);
 
         // Validasi apakah segitiga valid
         if (sisi1Segitiga + sisi2Segitiga <= sisi3Segitiga || sisi1Segitiga + sisi3Segitiga <= sisi2Segitiga || sisi2Segitiga + sisi3Segitiga <= sisi1Segitiga) {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Menghitung keliling
-        const kelilingSegitiga = sisi1Segitiga + sisi2Segitiga + sisi3Segitiga;
+        let kelilingSegitiga = sisi1Segitiga + sisi2Segitiga + sisi3Segitiga;
 
         document.getElementById('value-sisi1').innerText = sisi1Segitiga;
         document.getElementById('value-sisi2').innerText = sisi2Segitiga;
@@ -58,16 +58,13 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('kelilingSegitiga').reset();
         document.getElementById('result-keliling-segitiga').style.display = 'none';
     });
-    
-    //menghilangkan hasil dari penghitungan
-   
 
     //luas jajar genjang
     document.getElementById('luasJajarGenjang').addEventListener('submit', function (e) {
         e.preventDefault();
-        const alasJajarGenjang = parseFloat(document.getElementById('alas-input-jg').value);
-        const tinggiJajarGenjang = parseFloat(document.getElementById('tinggi-input-jg').value);
-        const luasJajarGenjang = alasJajarGenjang * tinggiJajarGenjang;
+        let alasJajarGenjang = parseFloat(document.getElementById('alas-input-jg').value);
+        let tinggiJajarGenjang = parseFloat(document.getElementById('tinggi-input-jg').value);
+        let luasJajarGenjang = alasJajarGenjang * tinggiJajarGenjang;
 
         document.getElementById('value-alas-jg').innerText = alasJajarGenjang;
         document.getElementById('value-tinggi-jg').innerText = tinggiJajarGenjang;
@@ -85,9 +82,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //keliling jajar genjang
     document.getElementById('kelilingJajarGenjang').addEventListener('submit', function (e) {
         e.preventDefault();
-        const panjangJajarGenjang = parseFloat(document.getElementById('panjang-input-jg').value);
-        const lebarJajarGenjang = parseFloat(document.getElementById('lebar-input-jg').value);
-        const kelilingJajarGenjang = 2 * (panjangJajarGenjang + lebarJajarGenjang);
+        let panjangJajarGenjang = parseFloat(document.getElementById('panjang-input-jg').value);
+        let lebarJajarGenjang = parseFloat(document.getElementById('lebar-input-jg').value);
+        let kelilingJajarGenjang = 2 * (panjangJajarGenjang + lebarJajarGenjang);
      
         document.getElementById('value-panjang-jg').innerText = panjangJajarGenjang;
         document.getElementById('value-lebar-jg').innerText = lebarJajarGenjang;
