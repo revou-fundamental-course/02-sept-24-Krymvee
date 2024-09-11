@@ -10,21 +10,25 @@
 
 <body>
     <div class="container">
+
+        <!-- judul halaman page -->
         <header class="main-header">
             <h1>Welcome to Katik</h1>
             <p>Hai sobat, Selamat datang di katik :)</p>
             <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
         </header>
 
+        <!-- halaman segiitga -->
         <main id="segitiga">
-
+            <!-- link selection segitiga dan jajar genjang -->
             <section class="selection-link">
                 <a href="#" class="link-segitiga active capitalize">segitiga</a>
                 <a href="#" class="link-jajar-genjang capitalize" id="jajar-genjang-btn"
                     onclick="jajarGenjangActive()">jajar genjang</a>
             </section>
-
+            <!-- wrapper luas dan keliling segitiga -->
             <section class="wrapper">
+                <!-- kotak luas segitiga -->
                 <aside class="luas-segitiga">
                     <header class="content-header">
                         <h1 class="header-segitiga capitalize">luas segitiga</h1>
@@ -49,7 +53,8 @@
                             </div>
                         </div>
                     </article>
-                    <form id="luasSegitiga">
+                    <!-- form luas segiitga -->
+                    <form id="luas-segitiga">
                         <header class="header-form">
                             <h1 class="capitalize">hitung luas segitiga</h1>
                         </header>
@@ -71,12 +76,12 @@
                                 <button type="submit" class="hitung-btn capitalize" id="hitungLuasSegitiga">hitung</button>
                             </div>
                             <div class="reset">
-                                <button class="reset-btn capitalize" id="resetLuasSegitiga">reset</button>
+                                <button type="button" class="reset-btn capitalize" id="reset-luas-segitiga">reset</button>
                             </div>
                         </div>
                     </form>
                 </aside>
-
+                <!-- kotak keliling segitiga -->
                 <aside class="keliling-segitiga">
                     <header class="content-header">
                         <h1 class="header-segitiga capitalize">keliling segitiga</h1>
@@ -101,7 +106,8 @@
                             </div>
                         </div>
                     </article>
-                    <form id="kelilingSegitiga">
+                    <!-- form keliling segitiga -->
+                    <form id="keliling-segitiga">
                         <header class="header-form">
                             <h1 class="capitalize">hitung keliling segitiga</h1>
                         </header>
@@ -127,22 +133,23 @@
                                 <button type="submit" class="hitung-btn capitalize" id="hitungKelilingSegitiga">hitung</button>
                             </div>
                             <div class="reset">
-                                <button class="reset-btn capitalize" id="resetKelilingSegitiga">reset</button>
+                                <button type="button" class="reset-btn capitalize" id="reset-keliling-segitiga">reset</button>
                             </div>
                         </div>
                     </form>
                 </aside>
             </section>
         </main>
-
+        <!-- halaman jajar genjang -->
         <main id="jajar-genjang">
-
+            <!-- link selection segitiga dan jajar genjang -->
             <section class="selection-link">
                 <a href="#" class="link-segitiga capitalize" onclick="segitigaActive()">segitiga</a>
                 <a href="#" class="link-jajar-genjang active capitalize">jajar genjang</a>
             </section>
-
+            <!-- wrapper luas dan keliling jajar genjang -->
             <section class="wrapper">
+                <!-- kotak luas jajar genjang -->
                 <aside class="luas-jajar-genjang">
                     <header class="content-header">
                         <h1 class="header-jajar-genjang capitalize">luas jajar genjang</h1>
@@ -166,18 +173,19 @@
                             </div>
                         </div>
                     </article>
-                    <form id="luasJajarGenjang">
+                    <!-- form luas jajar genjang -->
+                    <form id="luas-jajar-genjang">
                         <header class="header-form">
                             <h1 class="capitalize">hitung luas jajar genjang</h1>
                         </header>
                         <div class="input-form">
                             <div class="alas">
                                 <label for="alas-input-jg" class="capitalize">alas :</label>
-                                <input type="number" name="alas-input-jg" id="alas-input-jg">
+                                <input type="number" name="alas-input-jg" id="alas-input-jg" required>
                             </div>
                             <div class="tinggi">
                                 <label for="tinggi-input-jg" class="capitalize">tinggi :</label>
-                                <input type="number" name="tinggi-input-jg" id="tinggi-input-jg">
+                                <input type="number" name="tinggi-input-jg" id="tinggi-input-jg" required>
                             </div>
                         </div>
                         <div class="hasil-operasi" id="result-luas-jajar-genjang">
@@ -188,12 +196,12 @@
                                 <button type="submit" class="hitung-btn capitalize" id="hasilLuasJajarGenjang">hitung</button>
                             </div>
                             <div class="reset">
-                                <button class="reset-btn capitalize" id="resetLuasJajarGenjang">reset</button>
+                                <button type="button" class="reset-btn capitalize" id="reset-luas-jajar-genjang">reset</button>
                             </div>
                         </div>
                     </form>
                 </aside>
-
+                <!-- kotak keliling jajar genjang -->
                 <aside class="keliling-jajar-genjang">
                     <header class="content-header">
                         <h1 class="header-jajar-genjang capitalize">keliling jajar genjang</h1>
@@ -217,7 +225,8 @@
                             </div>
                         </div>
                     </article>
-                    <form id="kelilingJajarGenjang">
+                    <!-- form keliling jajar genjang -->
+                    <form id="keliling-jajar-genjang">
                         <header class="header-form">
                             <h1 class="capitalize">hitung keliling jajar genjang</h1>
                         </header>
@@ -239,7 +248,7 @@
                                 <button type="submit" id="hasilKelilingJajarGenjang" class="hitung-btn capitalize">hitung</button>
                             </div>
                             <div class="reset">
-                                <button class="reset-btn capitalize" id="resetKelilingJajarGenjang">reset</button>
+                                <button type="button" class="reset-btn capitalize" id="reset-keliling-jajar-genjang">reset</button>
                             </div>
                         </div>
                     </form>
